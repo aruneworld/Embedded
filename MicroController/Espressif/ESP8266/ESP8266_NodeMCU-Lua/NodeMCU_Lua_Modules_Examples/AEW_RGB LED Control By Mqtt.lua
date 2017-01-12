@@ -30,8 +30,8 @@ DEVICE_NAME 	=	node.chipid()
 PUBLISH_TOPIC 	= 	"ArunEworld/"..DEVICE_NAME.."-Result"
 SUBSCRIBE_TOPIC = 	"ArunEworld/"..DEVICE_NAME
 CLIENT_ID 		= 	node.chipid()
-USERNAME 		= 	"username"				--	please change your username
-PASSWORD 		= 	"Password"				--	please change your Password
+USERNAME 		= 	"username"			--	please change your username
+PASSWORD 		= 	"Password"			--	please change your Password
 HOSTNAME 		= 	"hostname.com"			--  Please change your port
 PORT 			= 	"Port_Number"			--	Please change your port number
 
