@@ -9,7 +9,7 @@
 -- http://esp8266iot.blogspot.in/
 -- http://aruneworld.blogspot.com/
 -- Tested By 	: Arun(20170112)
--- Example Name : AEW_RGB-HTTP.lua
+-- Example Name : AAEW_RGB LED Control By TCP-HTTP_Webserver.lua
 
 pwm.setup(1, 100, 512)
 pwm.setup(2, 100, 512)
