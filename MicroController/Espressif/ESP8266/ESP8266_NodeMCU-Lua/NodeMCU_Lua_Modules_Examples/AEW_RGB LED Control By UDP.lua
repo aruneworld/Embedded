@@ -2,15 +2,13 @@
 --[[
 	NodeMCU custom build by frightanic.com
 	branch: master
-	commit: 81ec3665cb5fe68eb8596612485cc206b65659c9
 	SSL: false
 	modules: bit,enduser_setup,file,gpio,http,i2c,mdns,mqtt,net,node,ow,pwm,rtcfifo,rtcmem,rtctime,sntp,tmr,uart,wifi
- 	build 	built on: 2016-12-22 09:22
  	powered by Lua 5.1.4 on SDK 1.5.4.1(39cb9a32)
 ]]--
 -- http://esp8266iot.blogspot.in/
 -- http://aruneworld.blogspot.com/
--- Tested By 	: Arun
+-- Tested By 	: Arun (20170112)
 -- Example Name : AEW_RGB LED Control By UDP.lua
 
  --SetUp Pins
