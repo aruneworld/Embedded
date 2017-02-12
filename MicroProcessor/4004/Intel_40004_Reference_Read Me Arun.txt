@@ -1,0 +1,30 @@
+
+The Intel 4004 is a 4-bit central processing unit (CPU) released by Intel Corporation in 1971. 
+It was the first commercially available microprocessor by Intel. 
+The chip design started in April 1970, when Federico Faggin joined Intel, and it was completed under his leadership in January 1971.
+
+
+Intel 4004 emulator assembler disassembler
+	http://e4004.szyc.org/emu/
+
+MCS-4 instruction set.
+	http://e4004.szyc.org/iset.html
+	
+DataSheet/4004_datasheet
+	http://www.intel.com/Assets/PDF/DataSheet/4004_datasheet.pdf
+
+Reference Websites:
+	http://www.4004.com/
+	http://www.4004.com/assets/BuscomV2p1.jpg
+	
+	https://www.youtube.com/watch?v=j00AULJLCNo
+	https://en.wikipedia.org/wiki/Intel_4004
+	http://www.computermuseum.li/Testpage/Chip-IntelP4001.htm
+	http://www.computerhistory.org/education/educators/
+	http://www.firstmicroprocessor.com/thepaper/
+	
+	http://www.cpu-zone.com/
+
+	
+RAM Vs ROM Explain
+	https://www.youtube.com/watch?v=wJ4dAFI7xLw
