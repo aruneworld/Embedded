@@ -1,0 +1,95 @@
+Data Transfer Group 					(13 instructions)
+Arithmetic group						(20 instructions)
+Logical Group							(19 instructions)
+Branching group							(8 instructions)
+Stack, I/O and Machine control group	(14 instructions)
+	Totally								(74 instructions)
+
+Data Transfer Group (13 instructions)
+	MOV r1, r2		-	Move the content of one register to another
+	MOV r, M		-	Move the content of memory to register
+	MOV M, r		-	Move content of register to memory
+	MVI r, Data		-	Move immediate data to register
+	MVI M, Data		-	Move immediate data to memory location
+	LXI rp, data 16 -	Load register pair immediate
+	LDA addr		-	Load accumalator direct
+	STA addr		-	Store accumalator direct
+	LHLD addr		-	Load HL direct
+	SHLD addr		-	Store H and L direct
+	LDAX rp			-	Load Accumalator Indiarect
+	STAX rp			-	Store accumalator indirect
+	XCHG			-	Exchange H and L with D and E
+
+Arithmetic group(20 instructions)
+	ADD r1		-	Add register
+	ADD M		-	Add Memory
+	ADI data	-	Add immediate
+	ADC r		-	Add register with carry
+	ADC M		-	Add Memory with Carry
+	ACI data	-	Add immediate with Carry
+	SUB r		-	Subtract register
+	SUB M		-	Subtract Memory
+	SUI data	-	Subtract immediate
+	SBB r		-	Subtract register with borrow
+	SBB M		-	Subtract Memory with borrow
+	SBI data	-	Subtract immediate with Borrow
+	INR r		-	Increment register
+	INR M 		-	Increment Memory
+	DCR r		-	Decrement register
+	DCR M 		-	Decrement Memory
+	INX rp		-	Increment register pair
+	DCX rp		-	Decrement register pair
+	DAD rp		-	Add register pair H and L
+	DAA			-	Decimal Adjuct Accumalator
+	
+Logical Group(19 instructions)
+	ANA r		-	AND register
+	ANA M		-	AND Memory
+	ANI data	-	AND Immediate
+	XRA r		-	Exclusive OR register
+	XRA M		-	Exclusive OR Memory
+	XRI data	-	Exclusivee OR immediate
+	ORA	r		-	OR register
+	ORA M		- 	OR Memeory
+	ORI			-	OR immediate
+	CMP r		- 	Compare register
+	CMP M		-	Compare memeory
+	CPI data	-	Compare immediate
+	RLC 		-	Rotate left
+	RRC			-	Rotate right
+	RAL			-	Rotate left though Carry
+	RAR			-	Rotate right though Carry
+	CMA			-	complement accumalator
+	CMC			-	Complement carry
+	STC			-	Set carry
+
+
+Branching group(8 instructions)
+	JMP addr			-	Unconditional Jump
+	J conditional addr	-	Conditional Jump
+	CALL addr			-	Unconditional CALL
+	C conditional addr	-	Conditional Call
+	RET					-	Unconditional return
+	R Conditional		-	Conditional Return
+	RST	n				-	Restart
+	PCHL				-	
+
+Stack, I/O and Machine control group(14 instructions)
+	PUSH rp		-	Push
+	PUSH PSW	-	Push Processor Status word
+	POP rp		-	
+	POP PSW		-	Pop processor status word
+	XTHL		-	Exchange Stack top with H and LDA
+	SPHL		-	move HL to SP
+	IN Port		-	Input
+	OUT Port	-	output
+	EI			-	Enable Interrupt
+	DI			-	Disable Interrupt
+	HLT			-	Halt
+	NOP			-	No Operation
+	RIM			-	Read Interrupt Mask
+	SIM			-	Set interrupt mask
+	
+	
+	
+	
