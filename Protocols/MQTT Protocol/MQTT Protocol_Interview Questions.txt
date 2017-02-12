@@ -1,0 +1,7 @@
+Mqtt Interview Questions
+
+http://mqtt.org/faq
+
+
+what is standard for MQTT?
+	Message Queing Telemetry Transport
