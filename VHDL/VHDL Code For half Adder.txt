@@ -1,0 +1,17 @@
+https://www.elprocus.com/half-adder-and-full-adder/
+
+VHDL Code For half Adder
+
+entity ha is
+Port (a: in  STD_LOGIC;
+b : in  STD_LOGIC;
+sha : out  STD_LOGIC;
+cha : out  STD_LOGIC);
+end ha;
+
+architecture Behavioral of ha is
+
+begin
+sha <= a xor b ;
+cha <= a and b ;
+end Behavioral
