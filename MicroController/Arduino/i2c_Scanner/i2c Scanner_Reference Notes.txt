@@ -1,0 +1,3 @@
+http://playground.arduino.cc/Main/I2cScanner
+
+	http://www.gammon.com.au/forum/?id=10896
