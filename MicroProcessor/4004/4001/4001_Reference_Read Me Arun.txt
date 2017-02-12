@@ -1,0 +1,14 @@
+4001	(Fully Decoded Static Random Access Memory)
+
+Introduction date		: 	1971
+Type					:	Fully Decoded Static Random Access Memory.
+Memory					:  	256 x 8-bit
+Technology				:  	P-channel silicon gate MOS technology (10 microns)
+Number of transistors	:	 	 
+History					:	The 4001 is a 256 x 8-bit ROM designed to be used with other MCS-4/40 devices such as the 4004 CPU.
+
+
+
+Websites
+	http://www.cpu-zone.com/4001.htm
+	http://www.computermuseum.li/Testpage/Chip-IntelP4001.htm
