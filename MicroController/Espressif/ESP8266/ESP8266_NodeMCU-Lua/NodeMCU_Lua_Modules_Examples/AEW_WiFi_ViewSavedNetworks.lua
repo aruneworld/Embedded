@@ -8,7 +8,7 @@
 -- http://esp8266iot.blogspot.in/
 -- http://aruneworld.blogspot.com/
 -- Tested By 	: Arun(20170112)
--- Example Name : AEW_WiFi-ViewSavedNetworks.lua
+-- Example Name : AEW_WiFi_ViewSavedNetworks.lua
 
 
 
