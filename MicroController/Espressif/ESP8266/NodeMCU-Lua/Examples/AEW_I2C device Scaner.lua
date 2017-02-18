@@ -21,7 +21,7 @@ i2c.setup(id, pinSDA, pinSCL, speed)				--	Initialize the I²C module.
 
 print("Scanning Started....")
 for count = 0,127 do
-  i2c.start(id)							-	Send an I²C start condition.
+  i2c.start(id)							--	Send an I²C start condition.
   Status = i2c.address(id, count, i2c.TRANSMITTER)		--	Setup I²C address and read/write mode for the next transfer.
   i2c.stop(id)							--	Send an I²C stop condition.
 	if Status == true then
