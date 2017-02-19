@@ -1,5 +1,6 @@
 --------------------------------------------------------------------------------
 -- PCD8544  module for NODEMCU
+--nokia 5110 LCD Interface Code
 -- LICENCE: http://opensource.org/licenses/MIT
 -- Raul Aguaviva
 --------------------------------------------------------------------------------
