@@ -8,7 +8,7 @@
 -- http://esp8266iot.blogspot.in/
 -- http://aruneworld.blogspot.com/
 -- Tested By 	: Arun(20160812)
--- Example Name : AEW_DHT11.lua (this code is from NodeMCU Module example
+-- Example Name : AEW_DHT11.lua (this code is from NodeMCU DHT Module example
 ---------------------------------------------------------------------------
 --Initializing DHT11_SENSOR Pins 
 pin = 1 --GPIO-05
