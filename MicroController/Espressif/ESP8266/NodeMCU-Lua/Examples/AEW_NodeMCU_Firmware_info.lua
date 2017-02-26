@@ -20,12 +20,12 @@
 --Please update all modules name in below two tables- > Module_Names , Modules
 
 Module_Names ={	'adc','adxl345','am2320','apa102','bit','bme280','bmp085','cjsom','coap','cron','crypto','dht','encoder','enduser_setup',
-				'file','gdbstub','gpio','hmc5883l','http','hx711','i2c','l3g4200d','mdns','mqtt','net','node','ow','pcm','pref','pwm',
+				'file','gdbstub','gpio','hmc5883l','http','hx711','i2c','l3g4200d','mdns','mqtt','net','node','ow','package','pcm','pref','pwm',
 				'rc','rfswitch','rotary','rtcfifo','rtcmem','rtctime','sigma_delta','sntp','somfy','spi','struct','switec',
 				'tls','tm1829','tmr','tsl2561', 'u8g','uart','ucg','websocket', 'wifi', 'wps', 'ws2801', 'ws2812'}
 
 Modules = {		adc, adxl345, am2320, apa102,bit, bme280, bmp085, cjson, coap, cron, crypto, dht, encoder, enduser_setup, file, gdbstub,gpio,
-				hmc5883l, http, hx711, i2c, l3g4200d, mdns, mqtt, net, node, ow,pcm, pref, pwm, rc, rfswitch, rotary, rtcfifo, rtcmem, rtctime,
+				hmc5883l, http, hx711, i2c, l3g4200d, mdns, mqtt, net, node, ow, package, pcm, pref, pwm, rc, rfswitch, rotary, rtcfifo, rtcmem, rtctime,
 				sigma_delta, sntp, somfy, spi, struct, switec, tls, tm1829, tmr, tsl2561, u8g, uart, ucg, websocket, wifi, wps, ws2801, ws2812}
 
 print("total Modules : "..#Module_Names)
