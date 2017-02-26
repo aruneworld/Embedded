@@ -16,19 +16,20 @@
 -- Example Name : AEW_NodeMCU_Firmware_info.lua
 
 -----------------------------------------------------------
--- functions {require}
--- lightfunction{print, dofile}
+-- functions {require,pairs}
+-- lightfunction{print,dofile,loadfile,collectgarbage,pcall,select}
 -- table {package}
---Please update all modules name in below two tables- > Module_Names , Modules
+-- romtable {string,math,table}
+-- Please update all modules name in below two tables- > Module_Names , Modules
 
 Module_Names ={	'adc','adxl345','am2320','apa102','bit','bme280','bmp085','cjsom','coap','collectgarbage','cron','crypto','dht','dofile','encoder','enduser_setup',
-				'file','gdbstub','gpio','hmc5883l','http','hx711','i2c','loadfile','l3g4200d','mdns','mqtt','net','node','ow','package','pcm','pref','print', 'pwm',
-				'rc','require','rfswitch','rotary','rtcfifo','rtcmem','rtctime','sigma_delta','sntp','somfy','spi','struct','switec',
-				'tls','tm1829','tmr','tsl2561', 'u8g','uart','ucg','websocket', 'wifi', 'wps', 'ws2801', 'ws2812'}
+				'file','gdbstub','gpio','hmc5883l','http','hx711','i2c','loadfile','l3g4200d','math','mdns','mqtt','net','node','ow','package','pairs','pcall','pcm','pref','print', 'pwm',
+				'rc','require','rfswitch','rotary','rtcfifo','rtcmem','rtctime','select','sigma_delta','sntp','somfy','spi','string','struct','switec',
+				'table','tls','tm1829','tmr','tsl2561', 'u8g','uart','ucg','websocket', 'wifi', 'wps', 'ws2801', 'ws2812'}
 
 Modules = {		adc, adxl345, am2320, apa102,bit, bme280, bmp085, cjson, coap,collectgarbage, cron, crypto, dht,dofile, encoder, enduser_setup, file, gdbstub,gpio,
-				hmc5883l, http, hx711, i2c,loadfile, l3g4200d, mdns, mqtt, net, node, ow,package,pcm, pref, print, pwm, rc, require,rfswitch, rotary, rtcfifo, rtcmem, rtctime,
-				sigma_delta, sntp, somfy, spi, struct, switec, tls, tm1829, tmr, tsl2561, u8g, uart, ucg, websocket, wifi, wps, ws2801, ws2812}
+				hmc5883l, http, hx711, i2c,loadfile, l3g4200d, math,mdns, mqtt, net, node, ow,package,pairs,pcall,pcm, pref, print, pwm, rc, require,rfswitch, rotary, rtcfifo, rtcmem, rtctime,
+				select,sigma_delta, sntp, somfy, spi,string, struct, switec, table,tls, tm1829, tmr, tsl2561, u8g, uart, ucg, websocket, wifi, wps, ws2801, ws2812}
 
 print("total Modules : "..#Module_Names)
 --_version
