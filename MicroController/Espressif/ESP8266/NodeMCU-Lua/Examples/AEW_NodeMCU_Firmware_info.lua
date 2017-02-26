@@ -19,15 +19,15 @@
 -- functions {require,pairs}
 -- lightfunction{print,dofile,loadfile,collectgarbage,pcall,select}
 --table {package}
---romtable {string,math,table,coroutine}
+--romtable {string,math,table,coroutine,debug}
 --Please update all modules name in below two tables- > Module_Names , Modules
 
-Module_Names ={	'adc','adxl345','am2320','apa102','bit','bme280','bmp085','cjsom','coap','collectgarbage','coroutine','cron','crypto','dht','dofile','encoder','enduser_setup',
+Module_Names ={	'adc','adxl345','am2320','apa102','bit','bme280','bmp085','cjsom','coap','collectgarbage','coroutine','cron','crypto','debug','dht','dofile','encoder','enduser_setup',
 				'file','gdbstub','gpio','hmc5883l','http','hx711','i2c','loadfile','l3g4200d','math','mdns','mqtt','net','node','ow','package','pairs','pcall','pcm','pref','print', 'pwm',
 				'rc','require','rfswitch','rotary','rtcfifo','rtcmem','rtctime','select','sigma_delta','sntp','somfy','spi','string','struct','switec',
 				'table','tls','tm1829','tmr','tsl2561', 'u8g','uart','ucg','websocket', 'wifi', 'wps', 'ws2801', 'ws2812'}
 
-Modules = {		adc, adxl345, am2320, apa102,bit, bme280, bmp085, cjson, coap,collectgarbage, coroutine, cron, crypto, dht,dofile, encoder, enduser_setup, file, gdbstub,gpio,
+Modules = {		adc, adxl345, am2320, apa102,bit, bme280, bmp085, cjson, coap,collectgarbage, coroutine, cron, crypto, debug,dht,dofile, encoder, enduser_setup, file, gdbstub,gpio,
 				hmc5883l, http, hx711, i2c,loadfile, l3g4200d, math,mdns, mqtt, net, node, ow,package,pairs,pcall,pcm, pref, print, pwm, rc, require,rfswitch, rotary, rtcfifo, rtcmem, rtctime,
 				select,sigma_delta, sntp, somfy, spi,string, struct, switec, table,tls, tm1829, tmr, tsl2561, u8g, uart, ucg, websocket, wifi, wps, ws2801, ws2812}
 
