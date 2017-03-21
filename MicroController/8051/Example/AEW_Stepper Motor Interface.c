@@ -1,3 +1,11 @@
+/*
+I am briefly explaining, how 1275 times run of “for” loop give delay of 1ms:
+In 8051, 1 machine cycle requires 12 crystal pulses to execute and we have use 11.0592Mhz crystal.
+So time required for 1 machine cycle: 12/11.0592 = 1.085us
+So 1275*1.085=1.3ms, 1275 times of “for” loop gives nearly 1ms of delay.
+
+*/
+
 // Wave drive Mode
 #include<reg51.h>
 void msdelay(unsigned int time)
