@@ -1,5 +1,20 @@
--- retrieve the current time from Google
--- tested on NodeMCU 0.9.5 build 20150108
+station_cfg={}
+station_cfg.ssid= "JioFiUltimo" station_cfg.pwd= "8123020000UI"
+
+
+wifi.eventmon.register(wifi.eventmon.STA_CONNECTED, function(T)
+print("\n\tSTA - CONNECTED".."\n\tSSID: "..T.SSID.."\n\tBSSID: "..T.BSSID.."\n\tChannel: "..T.channel)
+
+end)
+wifi.eventmon.register(wifi.eventmon.STA_DISCONNECTED, function(T)
+	 print("\n\tSTA - DISCONNECTED".."\n\tSSID: "..T.SSID.."\n\tBSSID: "..T.BSSID.."\n\treason: "..T.reason)
+end)
+wifi.eventmon.register(wifi.eventmon.STA_GOT_IP, function(T)
+	 print("\n\tSTA - GOT IP".."\n\tStation IP: "..T.IP.."\n\tSubnet mask: "..T.netmask.."\n\tGateway IP: "..T.gateway)
+	 sta_ip = T.IP
+end)
+
+
 
 conn=net.createConnection(net.TCP, 0) 
 
@@ -18,4 +33,4 @@ conn:on("receive", function(conn, payload)
     conn:close()
     end) 
 t = tmr.now()    
-conn:connect(80,'google.com') 
+conn:connect(80,'google.com')
