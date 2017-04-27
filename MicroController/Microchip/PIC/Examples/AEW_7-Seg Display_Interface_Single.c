@@ -1,7 +1,7 @@
 /*
- * File:   AEW_7-Segment_Display_(Two)_1.c
+ * File:   AEW_7-Seg Display_Interface_Single.c
  * Author: Arun
- *
+ * http://aruneworld.blogspot.com
  * Created on 27 April, 2017, 1:17 PM
  */
 
