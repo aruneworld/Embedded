@@ -1,4 +1,4 @@
-*
+/*
  * File:   AEW_LCD_16x2_4bit.c
  * Author: Arun
  * https://aruneworld.blogspot.in/
