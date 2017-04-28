@@ -4,6 +4,7 @@
  * https://aruneworld.blogspot.in/
  * Created on 27 April, 2017, 1:17 PM
  */
+//Required LCD Libarary header file
 //---------------------------------------------------------- 
 #define _XTAL_FREQ 8000000
 
