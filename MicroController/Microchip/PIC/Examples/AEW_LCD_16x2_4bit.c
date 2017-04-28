@@ -1,3 +1,11 @@
+*
+ * File:   AEW_LCD_16x2_4bit.c
+ * Author: Arun
+ * https://aruneworld.blogspot.in/
+ * Created on 27 April, 2017, 1:17 PM
+ */
+
+
 #define _XTAL_FREQ 8000000
 
 #define RS RB0
