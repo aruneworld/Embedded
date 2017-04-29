@@ -1,7 +1,7 @@
 // http://esp8266iot.blogspot.in/
 // http://aruneworld.blogspot.com/
 // Tested By 	: Arun(20170430)
-// Example Name : AEW_TCP_Server.js
+// Example Name : AEW_TCP_Web_Server.js
 // Firmware  : Mongoose OS for ESP32
 //*******************************//
 // This example demonstrates how to create a TCP echo server.
