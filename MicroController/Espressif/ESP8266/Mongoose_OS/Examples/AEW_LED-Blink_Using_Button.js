@@ -3,7 +3,7 @@
 // http://aruneworld.blogspot.com/
 // Tested By 	: Arun(20170430)
 // Example Name : AEW_LED-Blink_Using_Button.js
-// Firmware  : Mongoose OS for ESP32
+// Firmware  : Mongoose OS for ESP8266
 //*******************************//
 // This example demonstrates how to react on a button press by toggling LED.
 //
