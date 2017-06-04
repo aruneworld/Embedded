@@ -1,4 +1,4 @@
-= UART (Serial) Libarary for PIC16F877A  =
+= UART (Serial) Libarary for PIC16F877A =
 
 This library allows pic16f877a communiacte with UART communication 
 
