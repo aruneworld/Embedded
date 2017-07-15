@@ -1,6 +1,4 @@
-
-// http://esp8266iot.blogspot.in/
-// http://aruneworld.blogspot.com/
+// http://aruneworld.com/embedded/espressif/esp32
 // Tested By 	: Arun(20170430)
 // Example Name : AEW_LED-Blink.js
 // Firmware  : Mongoose OS for ESP32
