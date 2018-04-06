@@ -5,7 +5,7 @@ require("tmr")
 require("wifi")
 
 --WiFi Credentials Set
-SSID		=	"Arun"
+SSID		=	"ArunEwold"
 PASSWORD	=	"8300026060"
 
 --Timer parameters Set
@@ -20,13 +20,13 @@ wifi.sta.config(SSID, PASSWORD)
 local function WiFi_IP_ADDRESS_STATUS_MONITOR()
 	--Check the IP address i if loop using Wifi.sta.getip() function
 	if wifi.sta.getip()==nil then
-      print("connecting to AP...") 
+      print("connecting to "..SSID.." :- AP...") 
    else
-      print('ip: ',wifi.sta.getip())
+      print("Connected to "..SSID.." ip : "..wifi.sta.getip())
       tmr.stop(0)						-- Stop the timer
    end
 
 end
 
 --timer alarm function 
-tmr.alarm(TIMER_ID, TIMER_DELAY_DURATION, TIMER_MODE, WiFi_IP_ADDRESS_STATUS_MONITOR()	end)
+tmr.alarm(TIMER_ID, TIMER_DELAY_DURATION, TIMER_MODE, function() WiFi_IP_ADDRESS_STATUS_MONITOR()	end)
