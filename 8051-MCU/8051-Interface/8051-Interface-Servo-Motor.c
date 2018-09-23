@@ -1,4 +1,5 @@
 // C program for interfacing servo motor with 8051 microcontroller
+// www.ArunEworld.com
 
 #include<reg51.h>
 sbit output=P2^0;
