@@ -1,4 +1,4 @@
-//http://www.circuitstoday.com/interfacing-seven-segment-display-to-8051
+
 ORG 000H //initial starting address
 START: MOV A,#00001001B // initial value of accumulator
 MOV B,A
