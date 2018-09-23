@@ -1,3 +1,4 @@
+//See more on : www.ArunEworld.com
 
 ORG 000H //initial starting address
 START: MOV A,#00001001B // initial value of accumulator
