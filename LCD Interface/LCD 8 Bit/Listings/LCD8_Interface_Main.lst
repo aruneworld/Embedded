@@ -1,0 +1,41 @@
+C51 COMPILER V9.60.0.0   LCD8_INTERFACE_MAIN                                               06/03/2019 23:57:16 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE LCD8_INTERFACE_MAIN
+OBJECT MODULE PLACED IN .\Objects\LCD8_Interface_Main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE LCD8_Interface_Main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(
+                    -.\Listings\LCD8_Interface_Main.lst) TABS(2) OBJECT(.\Objects\LCD8_Interface_Main.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include "LCD8.h"
+   3          
+   4          void timer_init(void);
+   5          
+   6          static unsigned char i;
+   7          static unsigned int x=100,y=150,cnt; 
+   8          
+   9          void main()
+  10          {
+  11   1        Lcd8_Init();
+  12   1        Lcd8_Display(LCD_First_Line,"   Hello World  ",16);
+  13   1        while(1)
+  14   1        {
+  15   2          Lcd8_Display(LCD_Second_Line," ArunEworld.com ",16);
+  16   2        }//while(1)
+  17   1      }//void main()
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    477    ----
+   CONSTANT SIZE    =     34    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      7      25
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

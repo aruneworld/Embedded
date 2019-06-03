@@ -1,0 +1,308 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    06/03/2019  23:57:18  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\LCD8_Interface_Main.obj TO .\Objects\LCD8 PRINT (.\Listings
+>> \LCD8.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\LCD8_Interface_Main.obj (LCD8_INTERFACE_MAIN)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  .\Objects\LCD8 (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0008H     UNIT         _DATA_GROUP_
+            DATA    0010H     0007H     UNIT         ?DT?_LCD8_DECIMAL3?LCD8_INTERFACE_MAIN
+            DATA    0017H     0007H     UNIT         ?DT?_LCD8_DECIMAL4?LCD8_INTERFACE_MAIN
+            DATA    001EH     0007H     UNIT         ?DT?LCD8_INTERFACE_MAIN
+            DATA    0025H     0003H     UNIT         ?DT?_LCD8_DECIMAL2?LCD8_INTERFACE_MAIN
+            IDATA   0028H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     009EH     UNIT         ?PR?_LCD8_DECIMAL4?LCD8_INTERFACE_MAIN
+            CODE    089EH     008CH     UNIT         ?C_C51STARTUP
+            CODE    092AH     0082H     UNIT         ?C?LIB_CODE
+            CODE    09ACH     0053H     UNIT         ?PR?_LCD8_DECIMAL3?LCD8_INTERFACE_MAIN
+            CODE    09FFH     003BH     UNIT         ?PR?_LCD8_DECIMAL2?LCD8_INTERFACE_MAIN
+            CODE    0A3AH     0032H     UNIT         ?PR?_LCD8_DISPLAY?LCD8_INTERFACE_MAIN
+            CODE    0A6CH     0027H     UNIT         ?PR?MAIN?LCD8_INTERFACE_MAIN
+            CODE    0A93H     0022H     UNIT         ?CO?LCD8_INTERFACE_MAIN
+            CODE    0AB5H     0021H     UNIT         ?PR?_LCD8_WRITE?LCD8_INTERFACE_MAIN
+            CODE    0AD6H     0018H     UNIT         ?PR?_LCD8_COMMAND?LCD8_INTERFACE_MAIN
+            CODE    0AEEH     0014H     UNIT         ?PR?LCD8_INIT?LCD8_INTERFACE_MAIN
+            CODE    0B02H     000BH     UNIT         ?PR?_DELAY?LCD8_INTERFACE_MAIN
+            CODE    0B0DH     0009H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\LCD8 (?C_STARTUP)
+
+
+SEGMENT                                          DATA_GROUP 
+  +--> CALLED SEGMENT                          START    LENGTH
+--------------------------------------------------------------
+?C_C51STARTUP                                  -----    -----
+  +--> ?PR?MAIN?LCD8_INTERFACE_MAIN
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/03/2019  23:57:18  PAGE 2
+
+
+  +--> ?C_INITSEG
+
+?PR?MAIN?LCD8_INTERFACE_MAIN                   -----    -----
+  +--> ?PR?LCD8_INIT?LCD8_INTERFACE_MAIN
+  +--> ?CO?LCD8_INTERFACE_MAIN
+  +--> ?PR?_LCD8_DISPLAY?LCD8_INTERFACE_MAIN
+
+?PR?LCD8_INIT?LCD8_INTERFACE_MAIN              -----    -----
+  +--> ?PR?_LCD8_COMMAND?LCD8_INTERFACE_MAIN
+
+?PR?_LCD8_COMMAND?LCD8_INTERFACE_MAIN          -----    -----
+  +--> ?PR?_DELAY?LCD8_INTERFACE_MAIN
+
+?PR?_LCD8_DISPLAY?LCD8_INTERFACE_MAIN          0008H    0007H
+  +--> ?PR?_LCD8_WRITE?LCD8_INTERFACE_MAIN
+
+?PR?_LCD8_WRITE?LCD8_INTERFACE_MAIN            000FH    0001H
+  +--> ?PR?_LCD8_COMMAND?LCD8_INTERFACE_MAIN
+  +--> ?PR?_DELAY?LCD8_INTERFACE_MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\LCD8 (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:089EH         SEGMENT       ?C_C51STARTUP
+  I:0028H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:08A1H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:089EH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:089EH         LINE#         133
+  C:08A0H         LINE#         134
+  C:08A1H         LINE#         135
+  C:08A2H         LINE#         136
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/03/2019  23:57:18  PAGE 3
+
+
+  C:08A4H         LINE#         185
+  C:08A7H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        LCD8_INTERFACE_MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:00A0H         PUBLIC        P2
+  C:0A3AH         PUBLIC        _Lcd8_Display
+  C:09FFH         PUBLIC        _Lcd8_Decimal2
+  C:09ACH         PUBLIC        _Lcd8_Decimal3
+  C:0800H         PUBLIC        _Lcd8_Decimal4
+  C:0A6CH         PUBLIC        main
+  C:0AB8H         PUBLIC        _Lcd8_Write
+  B:0080H.2       PUBLIC        Lcd8_EN
+  C:0AEEH         PUBLIC        Lcd8_Init
+  D:001EH         SYMBOL        cnt
+  B:0080H.0       PUBLIC        Lcd8_RS
+  B:0080H.1       PUBLIC        Lcd8_RW
+  D:0020H         SYMBOL        i
+  C:0AD6H         PUBLIC        _Lcd8_Command
+  C:0B02H         PUBLIC        _Delay
+  D:0021H         SYMBOL        x
+  D:0023H         SYMBOL        y
+  -------         PROC          LCD8_INIT
+  C:0AEEH         LINE#         21
+  C:0AEEH         LINE#         22
+  C:0AEEH         LINE#         23
+  C:0AF3H         LINE#         24
+  C:0AF8H         LINE#         25
+  C:0AFDH         LINE#         26
+  -------         ENDPROC       LCD8_INIT
+  -------         PROC          _LCD8_COMMAND
+  D:0007H         SYMBOL        com
+  C:0AD6H         LINE#         29
+  C:0AD6H         LINE#         30
+  C:0AD6H         LINE#         31
+  C:0AD8H         LINE#         32
+  C:0ADAH         LINE#         33
+  C:0ADEH         LINE#         34
+  C:0AE5H         LINE#         35
+  C:0AE7H         LINE#         36
+  -------         ENDPROC       _LCD8_COMMAND
+  -------         PROC          L?0018
+  -------         ENDPROC       L?0018
+  -------         PROC          _LCD8_WRITE
+  D:0007H         SYMBOL        com
+  D:000FH         SYMBOL        lr
+  C:0AB8H         LINE#         39
+  C:0ABAH         LINE#         40
+  C:0ABAH         LINE#         41
+  C:0ABDH         LINE#         43
+  C:0AC0H         LINE#         44
+  C:0AC4H         LINE#         45
+  C:0AC6H         LINE#         46
+  C:0ACDH         LINE#         47
+  C:0ACFH         LINE#         48
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/03/2019  23:57:18  PAGE 4
+
+
+  -------         ENDPROC       _LCD8_WRITE
+  -------         PROC          _LCD8_DISPLAY
+  D:0008H         SYMBOL        com
+  D:0009H         SYMBOL        word
+  D:000CH         SYMBOL        n
+  -------         DO            
+  D:000EH         SYMBOL        Lcd_i
+  -------         ENDDO         
+  C:0A3AH         LINE#         51
+  C:0A42H         LINE#         52
+  C:0A42H         LINE#         55
+  C:0A4FH         LINE#         56
+  C:0A4FH         LINE#         57
+  C:0A67H         LINE#         58
+  C:0A6BH         LINE#         59
+  -------         ENDPROC       _LCD8_DISPLAY
+  -------         PROC          _LCD8_DECIMAL2
+  D:0025H         SYMBOL        com
+  D:0005H         SYMBOL        val
+  -------         DO            
+  D:0002H         SYMBOL        Lcd_hr
+  D:0082H         SYMBOL        Lcd_t
+  D:0026H         SYMBOL        Lcd_o
+  -------         ENDDO         
+  C:09FFH         LINE#         61
+  C:0A01H         LINE#         62
+  C:0A01H         LINE#         65
+  C:0A0AH         LINE#         66
+  C:0A17H         LINE#         67
+  C:0A26H         LINE#         69
+  C:0A2EH         LINE#         70
+  -------         ENDPROC       _LCD8_DECIMAL2
+  -------         PROC          _LCD8_DECIMAL3
+  D:0010H         SYMBOL        com
+  D:0005H         SYMBOL        val
+  -------         DO            
+  D:0011H         SYMBOL        Lcd_h
+  D:0002H         SYMBOL        Lcd_hr
+  D:0013H         SYMBOL        Lcd_t
+  D:0015H         SYMBOL        Lcd_o
+  -------         ENDDO         
+  C:09ACH         LINE#         74
+  C:09AEH         LINE#         75
+  C:09AEH         LINE#         78
+  C:09B8H         LINE#         79
+  C:09C1H         LINE#         80
+  C:09D0H         LINE#         81
+  C:09DFH         LINE#         83
+  C:09E6H         LINE#         84
+  C:09F2H         LINE#         85
+  -------         ENDPROC       _LCD8_DECIMAL3
+  -------         PROC          _LCD8_DECIMAL4
+  D:0017H         SYMBOL        com
+  D:0002H         SYMBOL        val
+  -------         DO            
+  D:0082H         SYMBOL        Lcd_th
+  D:0002H         SYMBOL        Lcd_thr
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/03/2019  23:57:18  PAGE 5
+
+
+  D:0018H         SYMBOL        Lcd_h
+  D:0002H         SYMBOL        Lcd_hr
+  D:001AH         SYMBOL        Lcd_t
+  D:001CH         SYMBOL        Lcd_o
+  -------         ENDDO         
+  C:0800H         LINE#         88
+  C:0806H         LINE#         89
+  C:0806H         LINE#         92
+  C:0815H         LINE#         93
+  C:0822H         LINE#         94
+  C:0831H         LINE#         95
+  C:0840H         LINE#         96
+  C:084FH         LINE#         97
+  C:085EH         LINE#         98
+  C:086DH         LINE#         100
+  C:0878H         LINE#         101
+  C:0884H         LINE#         102
+  C:0891H         LINE#         103
+  -------         ENDPROC       _LCD8_DECIMAL4
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        del
+  C:0B02H         LINE#         106
+  C:0B02H         LINE#         107
+  C:0B02H         LINE#         108
+  C:0B0CH         LINE#         109
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  C:0A6CH         LINE#         9
+  C:0A6CH         LINE#         10
+  C:0A6CH         LINE#         11
+  C:0A6FH         LINE#         12
+  C:0A80H         LINE#         13
+  C:0A80H         LINE#         14
+  C:0A80H         LINE#         15
+  C:0A91H         LINE#         16
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LCD8_INTERFACE_MAIN
+
+  -------         MODULE        ?C?CLDOPTR
+  C:092AH         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?UIDIV
+  C:0957H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD8_DECIMAL2?LCD8_INTERFACE_MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD8_DECIMAL3?LCD8_INTERFACE_MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD8_DECIMAL4?LCD8_INTERFACE_MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0216H BYTE (26%) *
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/03/2019  23:57:18  PAGE 6
+
+
+******************************************************************************
+
+Program Size: data=41.0 xdata=0 code=793
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)
